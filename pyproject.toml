@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "pr-merge-bot"
+version = "1.0.0"
+description = "Automated PR merge bot with smart merge criteria"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+pr-merge-bot = "pr_merge_bot:main"
